@@ -7,9 +7,9 @@ export default  class ItemStatusFilter extends React.Component {
         const { filter, onFilterChange } = this.props;
         const newFilter = filter === 'all' ? 'not-done' : 'all';
         return (
-            <div className="form-check" style={{alignItems: 'center'}}>
+            <div className="form-check">
                     <input type="checkbox"
-                           className="form-check-input pull-right"
+                           className="form-check-input"
                            id="filter"
                            onClick={() => onFilterChange(newFilter)}
                     />
